@@ -1,0 +1,24 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_25_uart_echo\src -I C:\Users\sumin\lab3_25_uart_echo\sim -s tb_uart_echo -o C:\Users\sumin\lab3_25_uart_echo\build\sim\run-42cd0386a152490da62b9a108c76da6e\sim.vvp C:\Users\sumin\lab3_25_uart_echo\src\uart.v C:\Users\sumin\lab3_25_uart_echo\src\lab3_uart_echo.v C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_25_uart_echo\build\sim\run-42cd0386a152490da62b9a108c76da6e\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_UART_ECHO_PASS checks=3
+C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv:41: $finish called at 9970000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\lab3_25_uart_echo\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
+
+ [2] FAIL 로그
+ RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_25_uart_echo\src -I C:\Users\sumin\lab3_25_uart_echo\sim -s tb_uart_echo -o C:\Users\sumin\lab3_25_uart_echo\build\sim\run-ccbcd3baab094780b09c2415aa004a3d\sim.vvp C:\Users\sumin\lab3_25_uart_echo\src\uart.v C:\Users\sumin\lab3_25_uart_echo\src\lab3_uart_echo.v C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_25_uart_echo\build\sim\run-ccbcd3baab094780b09c2415aa004a3d\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+FATAL: C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv:28: echo=fa expected=41
+       Time: 3230000  Scope: tb_uart_echo.receive_byte
+
+ERROR: 종료 코드 1: C:\Users\sumin\lab3_25_uart_echo\build\sim\run-ccbcd3baab094780b09c2415aa004a3d\simulation.log
+
+ *  The terminal process "C:\Users\sumin\AppData\Local\Microsoft\WindowsApps\python.EXE 'tools/fpga_lab.py', 'simulate'" terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
