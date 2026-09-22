@@ -9,7 +9,7 @@ module tb_uart_echo;
 
     always #10 clk_50mhz = ~clk_50mhz;
 
-    lab3_uart_echo #(.CLK_HZ(800), .BAUD(200)) dut (
+    lab3_uart_echo #(.CLK_HZ(800), .BAUD(100)) dut (
         .clk_50mhz(clk_50mhz), .rst_p(rst_p), .uart_rxd(uart_rxd), .uart_txd(uart_txd), .led(led)
     );
 
