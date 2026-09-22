@@ -22,3 +22,15 @@ ERROR: 종료 코드 1: C:\Users\sumin\lab3_25_uart_echo\build\sim\run-ccbcd3baa
 
  *  The terminal process "C:\Users\sumin\AppData\Local\Microsoft\WindowsApps\python.EXE 'tools/fpga_lab.py', 'simulate'" terminated with exit code: 1. 
  *  Terminal will be reused by tasks, press any key to close it. 
+
+[3] 복구로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_25_uart_echo\src -I C:\Users\sumin\lab3_25_uart_echo\sim -s tb_uart_echo -o C:\Users\sumin\lab3_25_uart_echo\build\sim\run-bf96905579c9429a9df821f705109fb1\sim.vvp C:\Users\sumin\lab3_25_uart_echo\src\uart.v C:\Users\sumin\lab3_25_uart_echo\src\lab3_uart_echo.v C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_25_uart_echo\build\sim\run-bf96905579c9429a9df821f705109fb1\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_UART_ECHO_PASS checks=3
+C:\Users\sumin\lab3_25_uart_echo\sim\tb_uart_echo.sv:41: $finish called at 9970000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\lab3_25_uart_echo\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
